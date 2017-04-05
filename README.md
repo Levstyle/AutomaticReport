@@ -9,6 +9,7 @@
 3. tinydb
 4. apscheduler
 # 使用方法
-- 使用insertDailyReport往文档型数据库中写入每天要准备发送的日报-scheduler.add_job中的hour 和 minute参数设置每天发送的日报时间，取值范围分别为[0,23],[0,59]
+- 使用insertDailyReport往文档型数据库中写入每天要准备发送的日报
+- 使用scheduler.add_job中的hour 和 minute参数设置每天发送的日报时间，取值范围分别为[0,23],[0,59]
 - 程序会自动读取对应日期的数据进行发送，如果没有对应日的数据，程序不会自行发送
 - 如果要明天发送今天的日报，注意自行将日报时间减一
